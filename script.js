@@ -44,42 +44,50 @@ function navAnimation() {
     const nav = document.querySelector("nav");
     let tl;
 
-    nav.addEventListener("mouseenter", function () {
-        if (tl && tl.isActive()) tl.kill(); // Stop any running animation
-        tl = gsap.timeline();
+    const length = window.innerWidth;
 
-        tl.to(".nav-bottom", {
-            height: "21vh",
-            duration: 0.5
-        })
-        .to(".nav-top h5", {
-            display: "block",
-            duration: 0.1
-        })
-        .to(".nav-top h5 span", {
-            y: 0,
-            stagger: { amount: 0.5 }
+   
+        
+        nav.addEventListener("mouseenter", function () {
+            if (tl && tl.isActive()) tl.kill(); // Stop any running animation
+            tl = gsap.timeline();
+
+            tl.to(".nav-bottom", {
+                height: "21vh",
+                duration: 0.5
+            })
+            .to(".nav-top h5", {
+                display: "block",
+                duration: 0.1
+            })
+            .to(".nav-top h5 span", {
+                y: 0,
+                stagger: { amount: 0.5 }
+            });
         });
-    });
 
-    nav.addEventListener("mouseleave", function () {
-        if (tl && tl.isActive()) tl.kill(); // Stop any running animation
-        tl = gsap.timeline();
+        nav.addEventListener("mouseleave", function () {
+            if (tl && tl.isActive()) tl.kill(); // Stop any running animation
+            tl = gsap.timeline();
 
-        tl.to(".nav-top h5 span", {
-            y: 25,
-            stagger: { amount: 0.2 }
-        })
-        .to(".nav-top h5", {
-            display: "none",
-            duration: 0.1
-        })
-        .to(".nav-bottom", {
-            height: 0,
-            duration: 0.2
+            tl.to(".nav-top h5 span", {
+                y: 25,
+                stagger: { amount: 0.2 }
+            })
+            .to(".nav-top h5", {
+                display: "none",
+                duration: 0.1
+            })
+            .to(".nav-bottom", {
+                height: 0,
+                duration: 0.2
+            });
         });
-    });
+
+
+
 }
+
 
 function page1_animation(){
     
@@ -627,6 +635,15 @@ gsap.to(".move", {
 });
 
 }
+
+
+
+
+
+
+
+
+
 
 
 

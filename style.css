@@ -37,7 +37,7 @@ body nav{
 }
 .logo{
 
-    font-size: 5vh;
+    font-size: 3vw;
     font-weight: 900;
      
 } 
@@ -48,10 +48,8 @@ body nav{
     background-color: #6C63FF;
     
     border-radius: 50px;
-    height: 60%;
     width: 10vw;
-   
-    font-size: 3vh;
+    font-size: 1.5vw;
     font-weight: 800;
      
 } 
@@ -217,112 +215,6 @@ body nav{
     z-index: 2;
 }
 
-/* Responsive Styling */
-@media (max-width: 1024px) {
-    /* Navbar Adjustments */
-    .logo {
-        font-size: 4vh;
-    }
-    .lets-explore {
-        width: 12vw;
-        font-size: 2.5vh;
-    }
-    .nav-top {
-        width: 70vw;
-        gap: 5vh;
-    }
-
-    /* Page1 Adjustments */
-    .page1 h1 {
-        font-size: 10vw;
-        line-height: 10vw;
-    }
-    .page1 h1 img {
-        height: 7vw;
-        width: 7vw;
-    }
-}
-
-@media (max-width: 768px) {
-    /* Navbar Adjustments */
-    .logo {
-        font-size: 3vh;
-    }
-    .lets-explore {
-        width: 20vw;
-        font-size: 2vh;
-    }
-    .nav-top {
-        width: 80vw;
-        gap: 4vh;
-    }
-
-    /* Page1 Adjustments */
-    .page1 h1 {
-        font-size: 12vw;
-        line-height: 12vw;
-    }
-    .page1 h1 img {
-        height: 8vw;
-        width: 8vw;
-    }
-    .page1 h4 {
-        font-size: 1.5vw;
-    }
-
-    /* Moving Div Adjustments */
-    .moving-div {
-        width: 60%;
-    }
-}
-
-@media (max-width: 480px) {
-    /* Navbar Adjustments */
-    .logo {
-        font-size: 2.5vh;
-    }
-    .lets-explore {
-        width: 30vw;
-        font-size: 1.5vh;
-    }
-    .nav-top {
-        width: 90vw;
-        gap: 2vh;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Page1 Adjustments */
-    .page1 h1 {
-        font-size: 15vw;
-        line-height: 15vw;
-    }
-    .page1 h1 img {
-        height: 10vw;
-        width: 10vw;
-    }
-    .page1 p {
-        font-size: 3vw;
-    }
-    .page1 h4 {
-        font-size: 2vw;
-        padding: 4px 8px;
-    }
-
-    /* Moving Div Adjustments */
-    .moving-div {
-        width: 80%;
-        bottom: 5%;
-    }
-
-    /* Blur Adjustments */
-    .left-blur, .right-blur {
-        width: 15%;
-    }
-}
-
- /* ----------------------------------- */
-
 
 
 .page2{
@@ -484,114 +376,6 @@ body nav{
 }
 
 
-/* Responsive Styling */
-@media (max-width: 1024px) {
-    /* Page2 Adjustments */
-    .page2 .left-page,
-    .page2 .right-page {
-        width: 50%;
-    }
-    .page2 .left-page :nth-last-child(1) {
-        font-size: 2.5vh;
-    }
-    .page2 .left-page :nth-last-child(2) {
-        font-size: 2vh;
-    }
-    .elem-cont {
-        font-size: 3vh;
-    }
-    .elem-cont img {
-        height: 15vh;
-        width: 15vh;
-    }
-
-    /* Page3 Adjustments */
-    .box .icon {
-        width: 12vw;
-        height: 12vw;
-    }
-    .box .text {
-        width: 10vw;
-    }
-    .icon i {
-        font-size: 2.5vw;
-    }
-}
-
-@media (max-width: 768px) {
-    /* Page2 Adjustments */
-    .page2 {
-        flex-direction: column;
-        padding: 2vh;
-    }
-    .page2 .left-page,
-    .page2 .right-page {
-        width: 90%;
-        gap: 20vh;
-    }
-    .page2 .left-page :nth-last-child(1),
-    .page2 .left-page :nth-last-child(2) {
-        font-size: 2vh;
-        width: 80%;
-    }
-    .elem-cont {
-        font-size: 2.5vh;
-    }
-    .elem-cont img {
-        height: 12vh;
-        width: 12vh;
-    }
-
-    /* Page3 Adjustments */
-    .box .icon {
-        width: 14vw;
-        height: 14vw;
-    }
-    .box .text {
-        width: 12vw;
-        padding: 8px 16px;
-    }
-    .icon i {
-        font-size: 2vw;
-    }
-}
-
-@media (max-width: 480px) {
-    /* Page2 Adjustments */
-    .page2 {
-        padding: 1vh;
-    }
-    .page2 .left-page,
-    .page2 .right-page {
-        width: 100%;
-    }
-    .page2 .left-page :nth-last-child(1),
-    .page2 .left-page :nth-last-child(2) {
-        font-size: 1.8vh;
-        width: 90%;
-    }
-    .elem-cont {
-        font-size: 2vh;
-    }
-    .elem-cont img {
-        height: 10vh;
-        width: 10vh;
-    }
-
-    /* Page3 Adjustments */
-    .box .icon {
-        width: 18vw;
-        height: 18vw;
-    }
-    .box .text {
-        width: 15vw;
-        font-size: 3vw;
-    }
-    .icon i {
-        font-size: 1.5vw;
-    }
-}
-/* ------------------------- */
 
 .page-4{
 
@@ -1900,3 +1684,14 @@ summary::marker{
     font-size: 0.8rem;
     color: #b3b3b3;
 }
+
+
+
+
+
+
+
+
+
+
+
